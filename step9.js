@@ -9,7 +9,7 @@ const serverClient = new faunaDB.Client({ secret: process.env.FAUNADB_ADMIN_SECR
         try {
             const result = await serverClient.query(
                 q.Update(
-                    q.Ref(q.Collection('posts'), '280692888547887623'),
+                    q.Ref(q.Collection('posts'), '280692300663751169'),
                     {data : {tags : ['pets', 'boys']}}
                 )
             )
